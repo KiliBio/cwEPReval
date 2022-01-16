@@ -2,8 +2,10 @@
 """
 Returns the Gvalue for any number supplied in the three units:
 Tesla (T)
-milliTesla (mT)
+milliTesla (mT) - doesn't work yet
 Gauss (G)
+
+Need to find a way to better detect number.
 """
 
 import sys
@@ -20,6 +22,16 @@ def main():
     exit()
 
 
+#def stringsplitter(string):
+#    # for mT
+#    if string[-2].isalpha():
+#        number = string[:-3]
+#        unit = string[-2:]
+#    else: #for T and G
+#        number = string[:-2]
+#        unit = string[-1:]
+#    print(number, unit)
+
 def stringsplitter(string):
     """
     Sorts input string by integers and letters.
@@ -33,6 +45,7 @@ def stringsplitter(string):
         else:
             print("{} is not number or unit".format(letter))
     return ''.join(number), ''.join(unit)
+
 
 def Gcalc(numb, unit):
     freq = 9.48 * 10**9 # Hertz
