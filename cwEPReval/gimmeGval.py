@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-by KiliBio
+by KiliBio Test
 Date: 16.01.2022
 Returns the Gvalue for any number supplied in the three units:
 Tesla (T)
