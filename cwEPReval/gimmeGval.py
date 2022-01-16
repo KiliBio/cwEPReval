@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """
+by KiliBio
+Date: 16.01.2022
 Returns the Gvalue for any number supplied in the three units:
 Tesla (T)
 milliTesla (mT) - doesn't work yet
